@@ -22,7 +22,12 @@
 
 import UIKit
 
-public typealias AlertButtonTapped = (Int) -> Void
+public enum BaseImageAlertViewButton: Int {
+    case left = 0
+    case right = 1
+}
+
+public typealias AlertButtonTapped = (BaseImageAlertViewButton) -> Void
 
 open class BaseImageAlertView: BaseAlertView {
 
@@ -89,7 +94,9 @@ open class BaseImageAlertView: BaseAlertView {
 
     @IBAction private func buttonTapped(_ sender: UIButton) {
         close()
-        buttonsBlock?(sender.tag)
+        if let button = BaseImageAlertViewButton(rawValue: sender.tag) {
+            buttonsBlock?(button)
+        }
     }
 
 }
