@@ -32,8 +32,8 @@
 		EF05EE041EB21A2D00CAE7B6 /* ApiErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05EE031EB21A2D00CAE7B6 /* ApiErrorProtocol.swift */; };
 		EF9083571EBA1BC500028858 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9083561EBA1BC500028858 /* UIViewController+Extensions.swift */; };
 		EFE04C111EBA25F200B979F3 /* BaseAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE04C101EBA25F200B979F3 /* BaseAlertView.swift */; };
-		EFE04C151EBA270F00B979F3 /* AlertViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE04C131EBA270F00B979F3 /* AlertViewImage.swift */; };
-		EFE04C161EBA270F00B979F3 /* AlertViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE04C141EBA270F00B979F3 /* AlertViewImage.xib */; };
+		EFE04C151EBA270F00B979F3 /* BaseImageAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE04C131EBA270F00B979F3 /* BaseImageAlertView.swift */; };
+		EFE04C161EBA270F00B979F3 /* BaseImageAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE04C141EBA270F00B979F3 /* BaseImageAlertView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,8 +66,8 @@
 		EF05EE031EB21A2D00CAE7B6 /* ApiErrorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiErrorProtocol.swift; sourceTree = "<group>"; };
 		EF9083561EBA1BC500028858 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		EFE04C101EBA25F200B979F3 /* BaseAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAlertView.swift; sourceTree = "<group>"; };
-		EFE04C131EBA270F00B979F3 /* AlertViewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewImage.swift; sourceTree = "<group>"; };
-		EFE04C141EBA270F00B979F3 /* AlertViewImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertViewImage.xib; sourceTree = "<group>"; };
+		EFE04C131EBA270F00B979F3 /* BaseImageAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseImageAlertView.swift; sourceTree = "<group>"; };
+		EFE04C141EBA270F00B979F3 /* BaseImageAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseImageAlertView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,8 +240,8 @@
 		EFE04C121EBA26E700B979F3 /* ImageAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				EFE04C131EBA270F00B979F3 /* AlertViewImage.swift */,
-				EFE04C141EBA270F00B979F3 /* AlertViewImage.xib */,
+				EFE04C131EBA270F00B979F3 /* BaseImageAlertView.swift */,
+				EFE04C141EBA270F00B979F3 /* BaseImageAlertView.xib */,
 			);
 			path = ImageAlertView;
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFE04C161EBA270F00B979F3 /* AlertViewImage.xib in Resources */,
+				EFE04C161EBA270F00B979F3 /* BaseImageAlertView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +414,7 @@
 				EF05EDF81EB0D5A600CAE7B6 /* UIBarButtonItem+Extensions.swift in Sources */,
 				EF05EDED1EAFA96D00CAE7B6 /* PassCodeHolder.swift in Sources */,
 				EF05EDB71EAF704800CAE7B6 /* Observable+Extensions.swift in Sources */,
-				EFE04C151EBA270F00B979F3 /* AlertViewImage.swift in Sources */,
+				EFE04C151EBA270F00B979F3 /* BaseImageAlertView.swift in Sources */,
 				EF05EDC01EAF706200CAE7B6 /* ApiResponse.swift in Sources */,
 				EF05EDBC1EAF705500CAE7B6 /* ConnectionError.swift in Sources */,
 				EF05EE021EB206C000CAE7B6 /* LoadingBarButton.swift in Sources */,
