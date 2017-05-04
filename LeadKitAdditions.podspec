@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.platform        = :ios, "9.0"
   s.source          = { :git => "https://github.com/NikAshanin/LeadKitAdditions.git", :tag => s.version }
   s.source_files    = "LeadKitAdditions/LeadKitAdditions/**/*.swift"
+  s.resources       = ['LeadKitAdditions/LeadKitAdditions/**/*.xib']
 
   s.dependency "LeadKit", '~> 0.4.6'
   s.dependency "KeychainAccess", '3.0.2'
