@@ -8,18 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseImageAlertView" customModule="LeadKitAdditions" customModuleProvider="target">
-            <connections>
-                <outlet property="dialogView" destination="gX0-LD-hyc" id="QNx-bZ-i1i"/>
-                <outlet property="imageView" destination="UbG-B0-6Lm" id="QlZ-qJ-5h4"/>
-                <outlet property="leftButton" destination="BL6-LX-v88" id="bMY-R3-R9N"/>
-                <outlet property="messageLabel" destination="Iul-UJ-Mf4" id="cOg-Ky-rVH"/>
-                <outlet property="rightButton" destination="xFH-Wp-yWO" id="Co9-tL-hWT"/>
-                <outlet property="titleLabel" destination="TPK-Qj-EdG" id="3ny-3v-4MH"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BaseImageAlertView" customModule="LeadKitAdditions" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -75,7 +66,7 @@
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <connections>
-                                                <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="2eh-ib-ehy"/>
+                                                <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="AA0-dN-qr5"/>
                                             </connections>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZC-wv-hIh" userLabel="Separator View">
@@ -96,7 +87,7 @@
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <connections>
-                                                <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="bH3-6S-ZfU"/>
+                                                <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="VT8-Pa-Tc0"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -163,6 +154,14 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dialogView" destination="gX0-LD-hyc" id="ENp-0A-wDP"/>
+                <outlet property="imageView" destination="UbG-B0-6Lm" id="xw4-0P-cfE"/>
+                <outlet property="leftButton" destination="BL6-LX-v88" id="hNq-s6-yNm"/>
+                <outlet property="messageLabel" destination="Iul-UJ-Mf4" id="6DJ-Wc-ebJ"/>
+                <outlet property="rightButton" destination="xFH-Wp-yWO" id="Dh8-O2-p27"/>
+                <outlet property="titleLabel" destination="TPK-Qj-EdG" id="P9q-rU-3hK"/>
+            </connections>
             <point key="canvasLocation" x="161" y="282"/>
         </view>
     </objects>

@@ -31,14 +31,6 @@ public typealias AlertButtonTapped = (BaseImageAlertViewButton) -> Void
 
 open class BaseImageAlertView: BaseAlertView {
 
-    override open var innerViewNibName: String {
-        return "BaseImageAlertView"
-    }
-
-    override open var innerViewBundle: Bundle? {
-        return Bundle(for: BaseImageAlertView.self)
-    }
-
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var leftButton: UIButton!
     @IBOutlet private weak var rightButton: UIButton!

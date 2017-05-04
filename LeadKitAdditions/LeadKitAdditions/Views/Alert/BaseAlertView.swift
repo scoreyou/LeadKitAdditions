@@ -23,7 +23,7 @@
 import UIKit
 import LeadKit
 
-open class BaseAlertView: XibView {
+open class BaseAlertView: UIView {
 
     @IBOutlet weak var dialogView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
